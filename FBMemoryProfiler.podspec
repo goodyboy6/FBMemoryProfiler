@@ -6,6 +6,8 @@
 #  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
 #
 
+
+
 Pod::Spec.new do |s|
   s.name         = "FBMemoryProfiler"
   s.version      = "0.1.3"
@@ -24,8 +26,8 @@ Pod::Spec.new do |s|
   files = files.map {|file| file.to_path}
   s.requires_arc = files
 
-  s.dependency 'FBRetainCycleDetector', '~> 0.1'
-  s.dependency 'FBAllocationTracker', '~> 0.1'
+  s.dependency 'FBRetainCycleDetector', '~> 1.0'
+  s.dependency 'FBAllocationTracker'
   
   s.framework = "Foundation", "CoreGraphics", "UIKit"
   s.library = 'c++'
